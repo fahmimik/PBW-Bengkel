@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- navbar brand  -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> Sistem Bengkel </a>
+      </div>
+      <!-- top nav -->
+      <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle " data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Admin </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-cog"></i> Profile</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#"><i class=" glyphicon glyphicon-log-out"></i> Log Out</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- sidebar nav -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+          <li>
+            <a href="adminHome.html"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#transaksi"><i class="glyphicon glyphicon-list-alt"></i> Transaksi <small><i class="glyphicon glyphicon-triangle-bottom"></i></small> </a>
+            <ul id="transaksi" class="collapse">
+              <li>
+                <a href="adminTambahJenisTransaksi.html"> Tambah Jenis Transaksi </a>
+              </li>
+              <li>
+                <a href="adminJenisTransaksi.html"> Jenis Transaksi </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#akun"><i class="glyphicon glyphicon-plus"></i> Akun <small><i class="glyphicon glyphicon-triangle-bottom"></i></small></a>
+            <ul id="akun" class="collapse">
+              <li>
+                <a href="adminTambahAkun.html"> Tambah Akun </a>
+              </li>
+              <li>
+                <a href="adminDataAkun.html"> Data Akun </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="adminProfil.html"><i class="glyphicon glyphicon-cog"></i> Profile </a>
+          </li>
+          <li>
+            <a href="awal.html"><i class="glyphicon glyphicon-log-out"></i> Logout </a>
+          </li>
+      </div>
+      <!-- end of navbar -->
+    </nav>
+    <!-- isi -->
+
+    <div id="page-wrapper" style="padding:70px 0px">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              Jenis Transaksi
+            </h1>
+            <ol class="breadcrumb">
+              <li>
+                <i class="glyphicon glyphicon-dashboard"></i><a href="adminHome.html"> Dashboard</a>
+              </li>
+              <li>
+                <i class=""></i><a href="adminDataAkun.html"> Akun</a>
+              </li>
+              <li class="active">
+                <i></i> Tambah Akun
+              </li>
+            </ol>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Tambah Akun</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row register-form">
+                  <div class="col-md-12">
+                    <form class="form-horizontal custom-form">
+                      <div class="form-group">
+                        <div class="col-sm-4 label-column"><label class="control-label" for="name-input-field">Nama</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="text" /></div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="col-sm-4 label-column"><label class="control-label" for="email-input-field">Username</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="email" /></div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="col-sm-4 label-column"><label class="control-label" for="pawssword-input-field">Password</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="password" /></div>
+                      </div>
+
+                      <!-- <div class="form-group">
+                        <div class="col-sm-4 label-column"><label class="control-label" for="repeat-pawssword-input-field">Repeat Password</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="password" /></div>
+                      </div> -->
+
+                      <div class="form-group">
+                        <div class="col-sm-4 label-column"><label class="control-label" for="dropdown-input-field">Role</label></div>
+                        <div class="col-sm-4 input-column">
+                          <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Role <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li role="presentation"><a href="#">Admin</a></li>
+                              <li role="presentation"><a href="#">Manajer</a></li>
+                              <li role="presentation"><a href="#">Kasir</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary submit-button" type="button">Submit</button>
+                      <button class="btn btn-danger submit-button pull-right" type="button">Cancel</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="resources/jquery.js"></script>
+  <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sistem Bengkel</title>
+  <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/style.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+  <div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- navbar brand  -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> Sistem Bengkel </a>
+      </div>
+      <!-- top nav -->
+      <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle " data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> Manajer </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-cog"></i> Profile</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#"><i class=" glyphicon glyphicon-log-out"></i> Log Out</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- sidebar nav -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+          <li>
+            <a href="manajerHome.html"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="manajerTransaksi.html"><i class="glyphicon glyphicon-list-alt"></i> Transaksi</a>
+          </li>
+          <li>
+            <a href="manajerpelanggan.html"><i class="glyphicon glyphicon-plus"></i> Pelanggan</a>
+          </li>
+          <li>
+            <a href="manajerJenisTransaksi.html"><i class="glyphicon glyphicon-inbox"></i> Jenis Transaksi</a>
+          </li>
+          <li>
+            <a href="manajerAkun.html"><i class="glyphicon glyphicon-th-large"></i> Akun</a>
+          </li>
+
+
+          <li>
+            <a href="manajerProfil.html"><i class="glyphicon glyphicon-cog"></i> Profile </a>
+          </li>
+          <li>
+            <a href="awal.html"><i class="glyphicon glyphicon-log-out"></i> Logout </a>
+          </li>
+      </div>
+      <!-- end of navbar -->
+    </nav>
+    <!-- isi -->
+
+    <div id="page-wrapper" style="padding:70px 0px">
+
+      <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              Dashboard <small>Statistics Overview</small>
+            </h1>
+            <ol class="breadcrumb">
+              <li>
+                <i class="glyphicon glyphicon-dashboard"></i> Dashboard
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 ">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-3">
+                  </div>
+                  <div class="col-xs-9 text-right">
+                    <div class="huge">0</div>
+                    <div>Akun Pengguna</div>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer">
+                  <span class="pull-left">View Details</span>
+                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="panel panel-green">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <i class="fa fa-tasks fa-5x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                    <div class="huge">0</div>
+                    <div>Pelanggan</div>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer">
+                  <span class="pull-left">View Details</span>
+                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="panel panel-yellow">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <i class="fa fa-shopping-cart fa-5x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                    <div class="huge">0</div>
+                    <div>Jenis Transaksi</div>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer">
+                  <span class="pull-left">View Details</span>
+                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="panel panel-red">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <i class="fa fa-support fa-5x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                    <div class="huge">0</div>
+                    <div>Transaksi</div>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer">
+                  <span class="pull-left">View Details</span>
+                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
+              </div>
+              <div class="panel-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Nota</th>
+                        <th>Kendaraan</th>
+                        <th>Transaksi</th>
+                        <th>Biaya</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div class="text-right">
+                  <a href="#">View All Transactions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.container-fluid -->
+
+    </div>
+
+  </div>
+
+  <script src="resources/jquery.js"></script>
+  <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
